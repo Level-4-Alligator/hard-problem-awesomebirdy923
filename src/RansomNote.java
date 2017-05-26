@@ -16,7 +16,7 @@ public class RansomNote {
 
 	public boolean solve() {
 		for (int i = 0; i < mag.split(" ").length; i++) {
-			magazineMap.put(mag.split(" ")[i], i);
+			magazineMap.put(mag.split(" ")[i], );
 		}
 		for (int i = 0; i < not.split(" ").length; i++) {
 			noteMap.put(not.split(" ")[i], i);
@@ -24,9 +24,6 @@ public class RansomNote {
 		// ---------------------------------------------------------
 		ArrayList<String> magazine = (ArrayList<String>) magazineMap.keySet();
 		ArrayList<String> note = (ArrayList<String>) noteMap.keySet();
-		if (magazine.get(5)==note.get(5)) {
-			return false;
-		}
 		return true;
 	}
 
